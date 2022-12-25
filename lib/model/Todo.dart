@@ -1,12 +1,9 @@
-class Todo{
+import 'package:get/state_manager.dart';
+
+class Todo {
   int id;
   String text;
-  var done.obs;
+  RxBool done;
 
-  Todo({
-    required this.id,
-    required this.text,
-    required this.done
-  });
-  
+  Todo({required this.id, required this.text, required this.done});
 }
